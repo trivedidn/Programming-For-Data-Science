@@ -19,11 +19,25 @@ x = 0
 a = 1 
 fib = []
 
+
+#get the fib numbers
 while x < 4000000: 
     fib.append(x)
     x, a = a, x + a
-    print(fib)
-    
 
+#find
+c = [x for x in fib if x % 2 ==0]
+d = sum(c)
+print(d)
 
     
+#Problem 3 
+n = 600851475143 
+x = 2
+
+while x * x < n:
+    while n%x == 0:
+        n = n / x
+    x = x + 1
+
+print (n)
