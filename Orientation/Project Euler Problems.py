@@ -32,9 +32,12 @@ print(d)
 
     
 #Problem 3 
+
+#define variables
 n = 600851475143 
 x = 2
 
+#find prime 
 while x * x < n:
     while n%x == 0:
         n = n / x
